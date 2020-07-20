@@ -1,22 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        Queue q = new Queue();
-        q.front = q.rear = null;
-        Solution.enQueue(q, 14);
-        Solution.enQueue(q, 22);
-        Solution.enQueue(q, 6);
-        Solution.displayQueue(q);
+        Queue queue = new Queue();
+        queue.front = queue.rear = null;
+        Solution.enQueue(queue, 14);
+        Solution.enQueue(queue, 22);
+        Solution.enQueue(queue, 6);
+        Solution.displayQueue(queue);
 
         System.out.println("");
-        System.out.printf(" Deleted value = %d", Solution.deQueue(q));
+        System.out.printf(" Deleted value = %d", Solution.deQueue(queue));
         System.out.println("");
-        System.out.printf(" Deleted value = %d", Solution.deQueue(q));
+        System.out.printf(" Deleted value = %d", Solution.deQueue(queue));
         System.out.println("");
-        Solution.displayQueue(q);
+        Solution.displayQueue(queue);
 
         System.out.println("");
-        Solution.enQueue(q, 9);
-        Solution.enQueue(q, 20);
-        Solution.displayQueue(q);
+        Solution.enQueue(queue, 9);
+        Solution.enQueue(queue, 20);
+        Solution.displayQueue(queue);
     }
 }
